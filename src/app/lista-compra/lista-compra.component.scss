@@ -42,7 +42,7 @@ input:focus{
     border-color: #0056b3;
 }
 
-button{
+button[type="submit"]{
     padding: 10px 20px;
     background: #007bff;
     color: #fff;
@@ -53,8 +53,22 @@ button{
     transition: backgroud 0.3s;
 }
 
-button:hover{
+button[type="button"]{
+    padding: 10px 20px;
+    background: #e9203b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: backgroud 0.3s;
+}
+
+button:hover[type="submit"]{
     background: #0056b3;
+}
+button:hover[type="button"]{
+    background: #9c0303;
 }
 
 table{
@@ -89,4 +103,8 @@ tr:nth-child(even){
 input[type="checkbox"]{
     transform: scale(1.2);
     cursor:pointer;
+}
+
+.item-riscado{
+    text-decoration: line-through;
 }
